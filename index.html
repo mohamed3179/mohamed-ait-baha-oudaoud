@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Ait Baha Oudaoud | AI & Machine Learning Engineer</title>
+    <meta name="description" content="Personal portfolio of Mohamed Ait Baha Oudaoud, AI & Machine Learning engineer specializing in Transformers, LLMs, and PyTorch. Featuring bilingual FR/EN support and dark mode." />
+    <meta property="og:title" content="Mohamed Ait Baha Oudaoud | AI & Machine Learning Engineer" />
+    <meta property="og:description" content="Master's in AI & Applications. Specializing in Transformers, LLMs, and PyTorch." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Pure CSS stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- =====================================================================
+         Site Header & Sticky Navigation
+         ===================================================================== -->
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <!-- Brand Wordmark -->
+        <a href="#hero" class="brand" aria-label="Mohamed Ait Baha Oudaoud">
+          <span class="brand-badge">MO</span>
+          <span class="brand-name-full">Mohamed Ait Baha Oudaoud</span>
+          <span class="brand-name-short">Mohamed A.</span>
+        </a>
+
+        <!-- Desktop Navigation Links & Mobile Drawer -->
+        <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+          <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+          <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+          <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
+          <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+          <a href="/assets/aistudio/cv_24845a62.pdf" target="_blank" download="Mohamed_Ait_Baha_Oudaoud_CV.pdf" class="nav-link mobile-only-link" data-i18n="nav_cv_btn">Resume (PDF)</a>
+        </nav>
+
+        <!-- Header Actions: Language Switcher, Dark Mode, CV button -->
+        <div class="header-actions">
+          <!-- Language Switcher (FR / EN) -->
+          <div class="lang-switch" role="group" aria-label="Language Switcher">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+
+          <!-- Dark / Light Theme Toggle -->
+          <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+            <!-- Moon Icon (for light mode) -->
+            <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun Icon (for dark mode) -->
+            <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- CV Download Button in Header -->
+          <a href="/assets/aistudio/cv_24845a62.pdf" target="_blank" download="Mohamed_Ait_Baha_Oudaoud_CV.pdf" class="btn btn-secondary btn-sm" data-i18n="nav_cv_btn">
+            Resume
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- ===================================================================
+           1. Hero Section
+           =================================================================== -->
+      <section class="section hero" id="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <!-- Left Column: Typography & CTAs -->
+          <div class="hero-content reveal">
+            <div class="hero-status">
+              <span class="hero-status-indicator" aria-hidden="true"></span>
+              <span data-i18n="hero_status">Available for AI & Engineering Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Mohamed <br class="mobile-break" />
+              <span class="hero-highlight">Ait Baha Oudaoud</span>
+            </h1>
+
+            <div class="hero-role" data-i18n="hero_role">
+              Master's Degree in Artificial Intelligence & Applications
+            </div>
+
+            <p class="hero-bio" data-i18n="hero_bio">
+              Motivated Computer Science and AI engineering student with a strong foundation in Machine Learning, Deep Learning, and Large Language Models (LLMs). Proficient in Python and PyTorch, with hands-on experience developing Transformers, Nanochat LLMs, and RAG architectures.
+            </p>
+
+            <div class="hero-meta">
+              <span data-i18n="hero_meta_loc">Morocco</span>
+              <span class="hero-meta-sep">/</span>
+              <span>PyTorch & Python</span>
+              <span class="hero-meta-sep">/</span>
+              <span>Transformers & LLMs</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">
+                Explore Projects
+              </a>
+              <a href="/assets/aistudio/cv_24845a62.pdf" target="_blank" download="Mohamed_Ait_Baha_Oudaoud_CV.pdf" class="btn btn-secondary" data-i18n="hero_btn_cv">
+                Download CV
+              </a>
+              <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">
+                Get in Touch
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="mailto:mohamedaitbahaoudaoud86@gmail.com" class="social-link" aria-label="Email Mohamed">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>mohamedaitbahaoudaoud86@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Portrait Asset -->
+          <div class="hero-visual reveal">
+            <div class="avatar-wrapper">
+              <div class="avatar-backdrop" aria-hidden="true"></div>
+              <div class="avatar-frame">
+                <img src="/assets/aistudio/moha_ou3ddi_2a9ff0c1.png" alt="Mohamed Ait Baha Oudaoud - AI & Machine Learning Engineer" class="avatar-image" width="420" height="420" />
+              </div>
+              <div class="avatar-floating-card">
+                <div class="avatar-card-icon">AI</div>
+                <div class="avatar-card-text">
+                  <span class="avatar-card-title">M.Sc. Artificial Intelligence</span>
+                  <span class="avatar-card-sub" data-i18n="hero_card_sub">University Ibn Zohr</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics & Proof Strip (Below Hero Split) -->
+        <div class="container">
+          <div class="metrics-strip reveal">
+            <div class="metric-item">
+              <div class="metric-value tabular-nums" data-i18n="metric_1_val">3+</div>
+              <div class="metric-label" data-i18n="metric_1_label">Core Deep Learning Projects</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value tabular-nums" data-i18n="metric_2_val">3</div>
+              <div class="metric-label" data-i18n="metric_2_label">Professional AI Certifications</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value tabular-nums" data-i18n="metric_3_val">100%</div>
+              <div class="metric-label" data-i18n="metric_3_label">PyTorch & Python Native</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value tabular-nums" data-i18n="metric_4_val">3</div>
+              <div class="metric-label" data-i18n="metric_4_label">Working Languages (AR, FR, EN)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           2. About Me Section
+           =================================================================== -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker" data-i18n="about_kicker">Background & Focus</span>
+            <h2 class="section-title" data-i18n="about_title">Blending Mathematical Rigor with Scalable AI Systems</h2>
+          </div>
+
+          <div class="about-grid">
+            <!-- Left Column: Biography & Highlights -->
+            <div class="about-text reveal">
+              <p data-i18n="about_p1">
+                I am currently pursuing a Master’s Degree in Artificial Intelligence and Applications at University Ibn Zohr in Morocco, following my Bachelor’s Degree in Mathematics and Computer Science.
+              </p>
+              <p data-i18n="about_p2">
+                My passion lies in understanding neural models from the ground up: rather than relying solely on high-level wrappers, I have implemented Transformer encoder-decoders and LLM components from mathematical formulas in PyTorch.
+              </p>
+              <p data-i18n="about_p3">
+                With experience in both algorithmic optimization (such as Particle Swarm Optimization) and modern Generative AI (LLMs and Retrieval-Augmented Generation), I am driven to build practical, impactful AI solutions.
+              </p>
+
+              <div class="about-features">
+                <div class="about-feature-item">
+                  <div class="feature-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="4" y1="9" x2="20" y2="9"></line>
+                      <line x1="4" y1="15" x2="20" y2="15"></line>
+                      <line x1="10" y1="3" x2="8" y2="21"></line>
+                      <line x1="16" y1="3" x2="14" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div class="feature-info">
+                    <h4 data-i18n="about_feat1_title">Mathematics & Computer Science Roots</h4>
+                    <p data-i18n="about_feat1_desc">Deep theoretical grounding in linear algebra, probability, vector calculus, and algorithm analysis.</p>
+                  </div>
+                </div>
+
+                <div class="about-feature-item">
+                  <div class="feature-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="feature-info">
+                    <h4 data-i18n="about_feat2_title">From-Scratch Deep Learning</h4>
+                    <p data-i18n="about_feat2_desc">Custom attention mechanisms, positional encodings, and GPU model training experience.</p>
+                  </div>
+                </div>
+
+                <div class="about-feature-item">
+                  <div class="feature-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                  </div>
+                  <div class="feature-info">
+                    <h4 data-i18n="about_feat3_title">RAG & Document Intelligence</h4>
+                    <p data-i18n="about_feat3_desc">Building hallucination-free retrieval systems with vector databases and embedding pipelines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Official Certifications Spotlight Card -->
+            <div class="about-cert reveal">
+              <div class="cert-card">
+                <div class="cert-card-header">
+                  <h3 class="cert-card-title" data-i18n="cert_title">Specialized Certifications</h3>
+                  <span class="cert-badge" data-i18n="cert_issuer">DeepLearning.AI / Coursera</span>
+                </div>
+
+                <div class="cert-list">
+                  <div class="cert-item">
+                    <div class="cert-bullet" aria-hidden="true"></div>
+                    <div>
+                      <div class="cert-name" data-i18n="cert_1_title">Deep Learning & Neural Networks</div>
+                      <div class="cert-meta" data-i18n="cert_1_meta">Coursera / DeepLearning.AI · 2025</div>
+                    </div>
+                  </div>
+
+                  <div class="cert-item">
+                    <div class="cert-bullet" aria-hidden="true"></div>
+                    <div>
+                      <div class="cert-name" data-i18n="cert_2_title">Generative AI and Large Language Models (LLMs)</div>
+                      <div class="cert-meta" data-i18n="cert_2_meta">Coursera / DeepLearning.AI · 2025</div>
+                    </div>
+                  </div>
+
+                  <div class="cert-item">
+                    <div class="cert-bullet" aria-hidden="true"></div>
+                    <div>
+                      <div class="cert-name" data-i18n="cert_3_title">Retrieval-Augmented Generation (RAG)</div>
+                      <div class="cert-meta" data-i18n="cert_3_meta">Coursera / DeepLearning.AI · 2026</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           3. Skills Section (Interactive Progress Bars + Categorized Cards)
+           =================================================================== -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker" data-i18n="skills_kicker">Technical Arsenal</span>
+            <h2 class="section-title" data-i18n="skills_title">Tools & Technologies I Work With</h2>
+            <p class="section-subtitle" data-i18n="skills_subtitle">
+              A balanced stack of core AI/ML frameworks, systems programming, and modern development tools.
+            </p>
+          </div>
+
+          <div class="skills-container">
+            <!-- Category 1: AI & Deep Learning -->
+            <div class="skills-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 class="category-title" data-i18n="skills_cat1_title">AI & Machine Learning</h3>
+              </div>
+
+              <div class="skill-list">
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">PyTorch & Deep Learning</span>
+                    <span class="skill-percent tabular-nums">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="92"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Transformers & Large Language Models (LLMs)</span>
+                    <span class="skill-percent tabular-nums">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Retrieval-Augmented Generation (RAG)</span>
+                    <span class="skill-percent tabular-nums">88%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Hugging Face & Model Fine-Tuning</span>
+                    <span class="skill-percent tabular-nums">85%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Scikit-learn & Neural Networks</span>
+                    <span class="skill-percent tabular-nums">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Programming & Data -->
+            <div class="skills-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="category-title" data-i18n="skills_cat2_title">Programming & Data</h3>
+              </div>
+
+              <div class="skill-list">
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Python (OOP, NumPy, SciPy)</span>
+                    <span class="skill-percent tabular-nums">95%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="95"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">C & C++ Systems Programming</span>
+                    <span class="skill-percent tabular-nums">82%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="82"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL (PostgreSQL, MySQL)</span>
+                    <span class="skill-percent tabular-nums">85%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Data Structures & Optimization Algorithms</span>
+                    <span class="skill-percent tabular-nums">88%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88"></div></div>
+                </div>
+              </div>
+
+              <div class="tag-cloud">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">RoPE Embeddings</span>
+                <span class="tech-tag">RMSNorm</span>
+                <span class="tech-tag">Vector Search</span>
+              </div>
+            </div>
+
+            <!-- Category 3: Frameworks & Developer Tools -->
+            <div class="skills-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                </div>
+                <h3 class="category-title" data-i18n="skills_cat3_title">Frameworks & Tools</h3>
+              </div>
+
+              <div class="skill-list">
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Git & GitHub Version Control</span>
+                    <span class="skill-percent tabular-nums">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Jupyter Notebook & Google Colab GPU</span>
+                    <span class="skill-percent tabular-nums">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="92"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">LaTeX Technical Authoring</span>
+                    <span class="skill-percent tabular-nums">85%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name">Linux / Bash CLI</span>
+                    <span class="skill-percent tabular-nums">88%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Languages & Communication -->
+            <div class="skills-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <h3 class="category-title" data-i18n="skills_cat4_title">Languages & Communication</h3>
+              </div>
+
+              <div class="skill-list">
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name" data-i18n="lang_ar">Arabic</span>
+                    <span class="skill-percent" data-i18n="lang_ar_lvl">Native</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="100"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name" data-i18n="lang_fr">French</span>
+                    <span class="skill-percent" data-i18n="lang_fr_lvl">Intermediate</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="75"></div></div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-info">
+                    <span class="skill-name" data-i18n="lang_en">English</span>
+                    <span class="skill-percent" data-i18n="lang_en_lvl">Intermediate</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="75"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           4. Projects Section (Interactive Filterable Bento Cards)
+           =================================================================== -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker" data-i18n="projects_kicker">Featured Works</span>
+            <h2 class="section-title" data-i18n="projects_title">Engineered for Performance & Scalability</h2>
+            <p class="section-subtitle" data-i18n="projects_subtitle">
+              A selection of open-source models, neural architectures from scratch, and optimization experiments.
+            </p>
+          </div>
+
+          <!-- Filter Controls -->
+          <div class="projects-filter-bar reveal" role="toolbar" aria-label="Project category filters">
+            <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter_all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="transformers" data-i18n="filter_transformers">Transformers & LLMs</button>
+            <button type="button" class="filter-btn" data-filter="ml" data-i18n="filter_ml">ML & Optimization</button>
+            <button type="button" class="filter-btn" data-filter="rag" data-i18n="filter_rag">RAG & Retrieval</button>
+          </div>
+
+          <!-- Project Cards Grid -->
+          <div class="projects-grid">
+            <!-- Project 1: Transformer Architecture from Scratch -->
+            <article class="project-card reveal" data-category="transformers">
+              <div class="project-card-header">
+                <span class="project-kicker" data-i18n="p1_kicker">Architecture from Scratch</span>
+                <div class="project-icon-indicator" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title" data-i18n="p1_title">Transformer Architecture from Scratch</h3>
+                <p class="project-desc" data-i18n="p1_desc">
+                  A complete, native PyTorch implementation of the seminal Transformer model without high-level library shortcuts.
+                </p>
+
+                <ul class="project-highlights">
+                  <li class="project-highlight-item" data-i18n="p1_h1">Scaled dot-product multi-head self-attention mechanism</li>
+                  <li class="project-highlight-item" data-i18n="p1_h2">Sinusoidal positional encodings & residual layer normalization</li>
+                  <li class="project-highlight-item" data-i18n="p1_h3">Full encoder-decoder architecture with autoregressive masking</li>
+                </ul>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">Self-Attention</span>
+                  <span class="tech-tag">Encoder-Decoder</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm open-modal-btn" data-project-id="1" data-i18n="btn_view_details">
+                  View Architecture Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="btn_github">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2: Large Language Models with Nanochat -->
+            <article class="project-card reveal" data-category="transformers">
+              <div class="project-card-header">
+                <span class="project-kicker" data-i18n="p2_kicker">Generative AI & LLMs</span>
+                <div class="project-icon-indicator" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title" data-i18n="p2_title">Large Language Models with Nanochat</h3>
+                <p class="project-desc" data-i18n="p2_desc">
+                  Exploration of modern autoregressive GPT architectures inspired by NanoGPT, implementing state-of-the-art LLM building blocks.
+                </p>
+
+                <ul class="project-highlights">
+                  <li class="project-highlight-item" data-i18n="p2_h1">Custom tokenization, RoPE (Rotary Position Embedding) & RMSNorm</li>
+                  <li class="project-highlight-item" data-i18n="p2_h2">GPU-accelerated training pipeline & KV-cache generation</li>
+                  <li class="project-highlight-item" data-i18n="p2_h3">Study of attention mechanisms, SwiGLU activations, and scaling laws</li>
+                </ul>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">GPT</span>
+                  <span class="tech-tag">RoPE</span>
+                  <span class="tech-tag">RMSNorm</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm open-modal-btn" data-project-id="2" data-i18n="btn_view_details">
+                  View Architecture Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="btn_github">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3: Student Performance Classification Using PSO -->
+            <article class="project-card reveal" data-category="ml">
+              <div class="project-card-header">
+                <span class="project-kicker" data-i18n="p3_kicker">Swarm Optimization</span>
+                <div class="project-icon-indicator" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title" data-i18n="p3_title">Student Performance Classification Using PSO</h3>
+                <p class="project-desc" data-i18n="p3_desc">
+                  Multilayer Perceptron (MLP) classification optimized using Particle Swarm Optimization (PSO) for parameter search and convergence.
+                </p>
+
+                <ul class="project-highlights">
+                  <li class="project-highlight-item" data-i18n="p3_h1">Comparative benchmark of PSO against Adam, SGD, GA & Simulated Annealing</li>
+                  <li class="project-highlight-item" data-i18n="p3_h2">Custom feature selection pipeline and hyperparameter tuning</li>
+                  <li class="project-highlight-item" data-i18n="p3_h3">Rigorous validation on structured educational datasets</li>
+                </ul>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">PSO Algorithm</span>
+                  <span class="tech-tag">Hyperparameter Tuning</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm open-modal-btn" data-project-id="3" data-i18n="btn_view_details">
+                  View Architecture Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="btn_github">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 4: Enterprise RAG System -->
+            <article class="project-card reveal" data-category="rag">
+              <div class="project-card-header">
+                <span class="project-kicker" data-i18n="p4_kicker">Document Intelligence</span>
+                <div class="project-icon-indicator" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title" data-i18n="p4_title">Enterprise RAG System with Vector Search</h3>
+                <p class="project-desc" data-i18n="p4_desc">
+                  End-to-end Retrieval-Augmented Generation pipeline designed to ground foundation models in private documents with zero hallucination.
+                </p>
+
+                <ul class="project-highlights">
+                  <li class="project-highlight-item" data-i18n="p4_h1">Hybrid retrieval: dense semantic embeddings combined with BM25 lexical scoring</li>
+                  <li class="project-highlight-item" data-i18n="p4_h2">Dynamic document chunking and cross-encoder reranking</li>
+                  <li class="project-highlight-item" data-i18n="p4_h3">Faithfulness verification and citation tracking for verifiable answers</li>
+                </ul>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Hugging Face</span>
+                  <span class="tech-tag">Vector DB</span>
+                  <span class="tech-tag">RAG</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm open-modal-btn" data-project-id="4" data-i18n="btn_view_details">
+                  View Architecture Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="btn_github">
+                  <span>Source Code</span> →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           5. Education & Academic Background Section
+           =================================================================== -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker" data-i18n="edu_kicker">Academic Path</span>
+            <h2 class="section-title" data-i18n="edu_title">Degrees & Academic Training</h2>
+            <p class="section-subtitle" data-i18n="edu_subtitle">
+              Solid foundations in mathematics, algorithmic problem solving, and modern artificial intelligence.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <!-- Master's Degree -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-period" data-i18n="edu1_period">2025 – Present</div>
+                <h3 class="timeline-title" data-i18n="edu1_title">Master's Degree in Artificial Intelligence & Applications</h3>
+                <div class="timeline-institution" data-i18n="edu1_school">University Ibn Zohr – Morocco</div>
+                <div class="timeline-details" data-i18n="edu1_desc">
+                  Specialization: Artificial Intelligence. Core coursework: Machine Learning, Deep Learning, Large Language Models, Retrieval-Augmented Generation (RAG), and Neural Network Architectures.
+                </div>
+              </div>
+            </div>
+
+            <!-- Bachelor's Degree -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-period" data-i18n="edu2_period">2020 – 2023</div>
+                <h3 class="timeline-title" data-i18n="edu2_title">Bachelor's Degree in Mathematics & Computer Science</h3>
+                <div class="timeline-institution" data-i18n="edu2_school">University Ibn Zohr – Morocco</div>
+                <div class="timeline-details" data-i18n="edu2_desc">
+                  Comprehensive training in abstract algebra, real analysis, probability & statistics, data structures, algorithms, and computational complexity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           6. Contact Section (Form + Direct Info Cards)
+           =================================================================== -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker" data-i18n="contact_kicker">Get in Touch</span>
+            <h2 class="section-title" data-i18n="contact_title">Let’s Collaborate on AI Projects</h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">
+              Open to internships, research collaborations, engineering roles, and innovative technical projects.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left Column: Direct Contact Info -->
+            <div class="contact-info-cards reveal">
+              <div class="contact-item-card">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label" data-i18n="contact_email_label">Email</div>
+                  <div class="contact-value">
+                    <a href="mailto:mohamedaitbahaoudaoud86@gmail.com">mohamedaitbahaoudaoud86@gmail.com</a>
+                  </div>
+                  <button type="button" class="copy-email-btn" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span data-i18n="copy_email_btn">Copy Email Address</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label" data-i18n="contact_phone_label">Phone</div>
+                  <div class="contact-value">
+                    <a href="tel:+212640876537">+212 640 87 65 37</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label" data-i18n="contact_loc_label">Location</div>
+                  <div class="contact-value" data-i18n="hero_meta_loc">Morocco</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Contact Form -->
+            <div class="contact-form-container reveal">
+              <!-- Success Alert Banner -->
+              <div class="form-alert" id="form-alert" role="alert">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span id="alert-text"></span>
+              </div>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="user-name" class="form-label" data-i18n="form_name_label">Your Name</label>
+                  <input type="text" id="user-name" name="name" class="form-input" placeholder="Mohamed Smith" data-i18n-placeholder="form_name_placeholder" required />
+                  <span class="form-error" data-i18n="form_err_name">Please enter a valid name (at least 2 characters).</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-email" class="form-label" data-i18n="form_email_label">Email Address</label>
+                  <input type="email" id="user-email" name="email" class="form-input" placeholder="name@example.com" data-i18n-placeholder="form_email_placeholder" required />
+                  <span class="form-error" data-i18n="form_err_email">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-subject" class="form-label" data-i18n="form_subject_label">Subject</label>
+                  <input type="text" id="user-subject" name="subject" class="form-input" placeholder="AI Project Inquiry / Collaboration" data-i18n-placeholder="form_subject_placeholder" />
+                </div>
+
+                <div class="form-group">
+                  <label for="user-message" class="form-label" data-i18n="form_msg_label">Your Message</label>
+                  <textarea id="user-message" name="message" class="form-textarea" placeholder="Hello Mohamed, I would like to discuss an opportunity..." data-i18n-placeholder="form_msg_placeholder" required></textarea>
+                  <span class="form-error" data-i18n="form_err_msg">Please write a message with at least 10 characters.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="form_submit_btn">
+                  Send Message
+                </button>
+              </form>
+
+              <button type="button" class="btn btn-secondary" id="reset-form-btn" style="display: none; margin-top: 1rem; width: 100%;" data-i18n="form_reset_btn">
+                Send another message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         Footer
+         ===================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#hero" class="brand">
+              <span class="brand-badge">MO</span>
+              <span>Mohamed Ait Baha Oudaoud</span>
+            </a>
+            <p data-i18n="footer_desc">
+              AI and Machine Learning Engineer. Building innovative solutions with Transformers, LLMs, and PyTorch.
+            </p>
+          </div>
+
+          <div class="footer-nav">
+            <div class="footer-col">
+              <h5 data-i18n="footer_nav_title">Navigation</h5>
+              <ul class="footer-links">
+                <li><a href="#about" class="footer-link" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" class="footer-link" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" class="footer-link" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#education" class="footer-link" data-i18n="nav_education">Education</a></li>
+                <li><a href="#contact" class="footer-link" data-i18n="nav_contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h5 data-i18n="footer_connect_title">Connect</h5>
+              <ul class="footer-links">
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+                <li><a href="mailto:mohamedaitbahaoudaoud86@gmail.com" class="footer-link">Email</a></li>
+                <li><a href="/assets/aistudio/cv_24845a62.pdf" target="_blank" download="Mohamed_Ait_Baha_Oudaoud_CV.pdf" class="footer-link" data-i18n="nav_cv_btn">Resume (PDF)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 <span data-i18n="footer_copy">Mohamed Ait Baha Oudaoud. All rights reserved.</span>
+          </div>
+          <div>
+            Morocco · Master's in Artificial Intelligence & Applications
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <!-- Project Architecture Details Modal -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <span class="section-kicker" style="margin: 0;">Technical Deep Dive</span>
+          <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project details">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-content" id="modal-body">
+          <!-- Dynamically populated by script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Pure Vanilla JS -->
+    <script src="/script.js"></script>
+  </body>
+</html>

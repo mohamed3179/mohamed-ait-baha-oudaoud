@@ -1,0 +1,6 @@
+{
+  "name": "Mohamed Ait Baha Oudaoud - Portfolio",
+  "description": "Personal portfolio website of Mohamed Ait Baha Oudaoud, AI & Machine Learning engineer specializing in Transformers, LLMs, and PyTorch. Featuring bilingual FR/EN support and dark mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
